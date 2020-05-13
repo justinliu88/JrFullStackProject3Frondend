@@ -1,0 +1,38 @@
+.container-homepage {
+    height: 755px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/homepage.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    .container-slogan {
+        width: 40%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        h1 {
+            margin: 0;
+            height: 40px;
+            font-family: 'Fredericka the Great', cursive;
+            color: whitesmoke;
+            opacity: 0.8;
+        }
+        p {
+            width: 80%;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            font-family: 'Abril Fatface', cursive;
+            color: rgb(189, 189, 0);
+            font-size: 21px;
+        }
+    }
+}
