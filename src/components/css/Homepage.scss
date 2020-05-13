@@ -8,7 +8,7 @@
     display: flex;
     align-items: center;
     .container-slogan {
-        width: 40%;
+        width: auto;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -19,20 +19,21 @@
         -moz-user-select: none;
         -ms-user-select: none;
         user-select: none;
-        h1 {
+        .homepage-slogan {
             margin: 0;
             height: 40px;
             font-family: 'Fredericka the Great', cursive;
-            color: whitesmoke;
+            color: white;
             opacity: 0.8;
+            font-size: 60px;
         }
-        p {
-            width: 80%;
-            margin-top: 40px;
-            margin-bottom: 40px;
+        .homepage-subSlogan {
+            width: 70%;
+            margin-top: 70px;
+            margin-bottom: 70px;
             font-family: 'Abril Fatface', cursive;
             color: rgb(189, 189, 0);
-            font-size: 21px;
+            font-size: 30px;
         }
     }
 }

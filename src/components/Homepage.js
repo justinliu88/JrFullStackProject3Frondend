@@ -5,12 +5,16 @@ function Homepage() {
     return (
         <div className="container-homepage">
             <div className="container-slogan">
-                <h1>Got it while it's hot!</h1>
-                <p>
+                <p className="homepage-slogan">Get it while it's hot!</p>
+                <p className="homepage-subSlogan">
                     We create custom personal pizzas with quality ingredients in
                     only five minutes
                 </p>
-                <button type="button" className="btn btn-outline-warning">
+                <button
+                    type="button"
+                    className="btn btn-outline-warning"
+                    onClick={(event) => (window.location.href = "#intropage")}
+                >
                     ORDER ONLINE
                 </button>
             </div>

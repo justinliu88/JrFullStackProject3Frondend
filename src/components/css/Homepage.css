@@ -9,7 +9,7 @@
   align-items: center;
 }
 .container-homepage .container-slogan {
-  width: 40%;
+  width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -21,20 +21,21 @@
   -ms-user-select: none;
   user-select: none;
 }
-.container-homepage .container-slogan h1 {
+.container-homepage .container-slogan .homepage-slogan {
   margin: 0;
   height: 40px;
   font-family: "Fredericka the Great", cursive;
-  color: whitesmoke;
+  color: white;
   opacity: 0.8;
+  font-size: 60px;
 }
-.container-homepage .container-slogan p {
-  width: 80%;
-  margin-top: 40px;
-  margin-bottom: 40px;
+.container-homepage .container-slogan .homepage-subSlogan {
+  width: 70%;
+  margin-top: 70px;
+  margin-bottom: 70px;
   font-family: "Abril Fatface", cursive;
   color: #bdbd00;
-  font-size: 21px;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=Homepage.css.map */
