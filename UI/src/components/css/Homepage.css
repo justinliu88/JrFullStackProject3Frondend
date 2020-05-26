@@ -37,5 +37,8 @@
   color: #bdbd00;
   font-size: 30px;
 }
+.container-homepage .container-slogan button {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=Homepage.css.map */
