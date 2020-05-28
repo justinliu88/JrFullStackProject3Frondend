@@ -10,10 +10,13 @@ import Hidden from "@material-ui/core/Hidden";
 // import Typography from "@material-ui/core/Typography";
 // import Link from "@material-ui/core/Link";
 import Navigator from "./Navigator";
-import Percentage from "./welcome/Percentageconver.js";
+//import Percentage from "./welcome/Percentageconver.js";
 import Header from "./Header";
 import Copyright from "./Copyright.js";
-import Piecharts from "./welcome/Piecharts";
+// import Piecharts from "./welcome/Piecharts";
+// import ChartsPage from "./welcome/Subscribers";
+// import Paper from "@material-ui/core/Paper";
+import Welcome from "./welcome/Welcome";
 
 let theme = createMuiTheme({
     palette: {
@@ -148,7 +151,7 @@ const styles = {
         // display: "flex",
         // flexDirection: "row",
         // justifyContent: "center",
-        padding: theme.spacing(6, 4),
+        padding: theme.spacing(4, 4),
         background: "#eaeff1",
     },
     footer: {
@@ -172,31 +175,39 @@ function Dashboard(props) {
                 <nav className={classes.drawer}>
                     <Hidden smUp implementation="js">
                         <Navigator
-                            PaperProps={{ style: { width: drawerWidth } }}
+                            PaperProps={{
+                                style: {
+                                    width: drawerWidth,
+                                },
+                            }}
                             variant="temporary"
                             open={mobileOpen}
                             onClose={handleDrawerToggle}
-                        />
-                    </Hidden>
+                        />{" "}
+                    </Hidden>{" "}
                     <Hidden xsDown implementation="css">
                         <Navigator
-                            PaperProps={{ style: { width: drawerWidth } }}
-                        />
-                    </Hidden>
-                </nav>
+                            PaperProps={{
+                                style: {
+                                    width: drawerWidth,
+                                },
+                            }}
+                        />{" "}
+                    </Hidden>{" "}
+                </nav>{" "}
                 <div className={classes.app}>
                     <Header
                         onDrawerToggle={handleDrawerToggle}
                         userName={props.userName}
-                    />
+                    />{" "}
                     <main className={classes.main}>
-                        <Piecharts />
-                    </main>
+                        <Welcome />
+                    </main>{" "}
                     <footer className={classes.footer}>
                         <Copyright />
-                    </footer>
-                </div>
-            </div>
+                    </footer>{" "}
+                </div>{" "}
+            </div>{" "}
         </ThemeProvider>
     );
 }

@@ -2,18 +2,18 @@ import React from "react";
 import { Doughnut } from "react-chartjs-2";
 
 const data = {
-    labels: ["Visits", "Orders"],
+    labels: ["Income", "Salary", "Other Expenses"],
     datasets: [
         {
-            label: "Percentage Conversion - Today",
-            backgroundColor: ["#16d9e3", "#2b5876"],
-            hoverBackgroundColor: ["#16d9e3", "#2b5876"],
-            data: [273, 62],
+            label: "Accounting - This Month",
+            backgroundColor: ["#ef5350", "#ffa726", "#66bb6a"],
+            hoverBackgroundColor: ["#ef5350", "#ffa726", "#66bb6a"],
+            data: [27, 6, 5],
         },
     ],
 };
 
-class Percentage extends React.Component {
+class Accounting extends React.Component {
     render() {
         return (
             <div className="container-pie" style={{ paddingBottom: "10px" }}>
@@ -22,7 +22,7 @@ class Percentage extends React.Component {
                     options={{
                         title: {
                             display: true,
-                            text: "Click Conversion - Today",
+                            text: "Accounting - This Month",
                             fontSize: 15,
                         },
                         legend: {
@@ -36,4 +36,4 @@ class Percentage extends React.Component {
     }
 }
 
-export default Percentage;
+export default Accounting;
